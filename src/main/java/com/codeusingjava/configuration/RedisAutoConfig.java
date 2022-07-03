@@ -9,6 +9,7 @@ import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.connection.RedisNode;
 import org.springframework.data.redis.connection.RedisPassword;
 import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
+import org.springframework.data.redis.repository.configuration.EnableRedisRepositories;
 import redis.clients.jedis.JedisPoolConfig;
 
 import java.util.ArrayList;
@@ -17,7 +18,8 @@ import java.util.List;
 /**
  * Created by @author yihui in 18:22 18/10/30.
  */
-@Configuration
+/*@Configuration
+@EnableRedisRepositories
 public class RedisAutoConfig {
 
     @Bean
@@ -77,4 +79,4 @@ public class RedisAutoConfig {
         }
     }
 
-}
+}*/

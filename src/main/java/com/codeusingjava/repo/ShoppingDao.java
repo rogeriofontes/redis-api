@@ -11,7 +11,7 @@ import java.util.List;
 @Repository
 public class ShoppingDao {
 
-    public static final String HASH_KEY = "Shopping";
+    public static final String HASH_KEY = "Shopping2";
     @Autowired
     private RedisTemplate template;
 

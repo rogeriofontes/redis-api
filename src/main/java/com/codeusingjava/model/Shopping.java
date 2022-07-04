@@ -14,7 +14,7 @@ import java.io.Serializable;
 @RedisHash("Product")
 public class Shopping implements Serializable {
     @Id
-    private int id;
+    private String id;
     private String name;
     private long price;
 }

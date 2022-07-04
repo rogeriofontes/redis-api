@@ -11,12 +11,12 @@ import java.util.List;
 @Repository
 public class ShoppingDao {
 
-    public static final String HASH_KEY = "Shopping2";
+    public static final String HASH_KEY = "ShoppingHash";
     @Autowired
     private RedisTemplate template;
 
     public Shopping save(Shopping shopping){
-        template.opsForHash().put(HASH_KEY,shopping.getId(),shopping);
+        template.opsForHash().putIfAbsent(HASH_KEY,shopping.getId(),shopping);
         return shopping;
     }
 
